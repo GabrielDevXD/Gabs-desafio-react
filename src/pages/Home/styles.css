@@ -1,0 +1,187 @@
+
+body {
+  overflow-x: hidden;
+}
+
+.home-container {
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.direction {
+  margin-top: 136px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*
+
+    
+      S e c t i o n     T h e m e
+
+
+*/
+
+.home-container .btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/*
+
+    
+      S e c t i o n    F  i n d e r
+
+
+*/
+
+
+.container-finder {
+  max-width: 375px;
+  margin: 0 auto;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.container-finder .title {
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+}
+
+.container-finder .title h1{
+  font-size: 36px;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+
+.container-finder .title p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+
+.container-finder .title p span{
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+
+.container-finder .finder {
+  display: flex;
+  align-items: center;
+}
+.container-finder .finder input {
+  margin-right: 10px;
+  outline: none;
+  background-color: var(--input);
+  border: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  width: 220px;
+  height: 50px;
+}
+.container-finder .finder button {
+  cursor: pointer;
+  height: 50px;
+  width: 90px;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--bg-btn);
+  color: var(--background);
+  transition: 200ms ease-in-out;
+} 
+
+.container-finder .finder button:hover {
+  background-color: var(--hover-btn);
+}
+/*
+
+    
+      S e c t i o n    I m a g e      G i t H u b
+
+
+*/
+.github-image {
+  overflow: hidden;
+  width: 100%;
+}
+.github-image svg{
+  overflow: hidden;
+  font-size: 415px;
+  margin: 3rem 0 0 12rem;
+  color: var(--text-primary);
+}
+
+
+/*
+
+
+  R e s p o n s i v e
+
+
+*/
+
+
+@media(min-width: 600px) {
+  .github-image {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .github-image svg{
+    overflow: hidden;
+    font-size: 415px;
+    margin: 3rem 20px 0 12rem;
+    color: var(--text-primary);
+  }
+}
+@media(min-width: 800px) {
+  .direction {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+@media(min-width: 1024px) {
+  .direction {
+    align-items: center;
+    flex-direction: row;
+  }
+  .github-image svg {
+    font-size: 500px;
+  }
+}
+
+@media(min-width: 1280px) {
+  .home-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+  }
+  .direction {
+    margin-top: 50px;
+    gap: 3rem;
+  }
+  .github-image svg {
+    overflow: hidden;
+    margin: 0 10px 0 0;
+    font-size: 630px;
+  }
+  .container-finder .finder input {
+    width: 300px;
+    height: 50px;
+  }
+  .container-finder .finder button {
+    width: 150px;
+    height: 50px;
+  }
+}
